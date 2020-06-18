@@ -1,5 +1,5 @@
 import express from 'express';
-import { ignoreFaviconMiddleware } from './index/middlewares';
+import { ignoreFaviconMiddleware } from './middlewares';
 import { Router } from './Router';
 import bodyParser from 'body-parser';
 import queryParser from 'express-query-parser';

@@ -1,3 +1,3 @@
 export * from './Server';
-export * from './index/IndexController';
+export * from './IndexController';
 export * from './mongo';

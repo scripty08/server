@@ -9,18 +9,12 @@
     "react"
   ],
   "extension": "js",
-  "jsnext:main": "src/index.js",
   "main": "src/index.js",
   "repository": "scripty/server",
-  "scripts": {
-    "compile": "node node_modules/@babel/cli/bin/babel.js src --out-dir lib --copy-files"
-  },
   "publishConfig": {
     "registry": "https://nexus.garic.biz/repository/npm-registry/"
   },
   "dependencies": {},
-  "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7"
-  }
+  "devDependencies": {},
+  "type": "module"
 }
