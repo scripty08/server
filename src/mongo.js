@@ -1,8 +1,5 @@
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 import { Logger } from './Logger';
-
-dotenv.config();
 
 const {
     MONGO_DB: db,
