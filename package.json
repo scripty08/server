@@ -1,6 +1,6 @@
 {
   "name": "@scripty/server",
-  "version": "0.1.0",
+  "version": "0.1.1-master.0",
   "author": "Danijel Garic",
   "license": "MIT",
   "description": "",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "dotenv": "^8.2.0",
     "prerender-node": "^3.2.5",
     "compression": "^1.7.4",
     "handlebars": "^4.5.3",
