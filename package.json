@@ -14,7 +14,14 @@
   "publishConfig": {
     "registry": "https://nexus.garic.biz/repository/npm-registry/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "prerender-node": "^3.2.5",
+    "compression": "^1.7.4",
+    "handlebars": "^4.5.3",
+    "mongoose": "^5.9.6",
+    "log4js": "^6.2.1"
+  },
   "devDependencies": {},
   "type": "module"
 }

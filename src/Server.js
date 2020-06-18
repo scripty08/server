@@ -1,10 +1,8 @@
 import express from 'express';
 import { ignoreFaviconMiddleware } from './middlewares';
 import { Router } from './Router';
-import bodyParser from 'body-parser';
-import queryParser from 'express-query-parser';
 import { getConnection } from './mongo';
-import { Logger } from '../logger';
+import { Logger } from './Logger';
 import prerender from 'prerender-node';
 import compression from 'compression';
 
@@ -36,8 +34,6 @@ export class Server {
         prerender.set( 'protocol', 'https' );
 
         this.server.use(compression());
-        this.server.use(bodyParser.json());
-        this.server.use(queryParser({ parseNull: true, parseBoolean: true }));
         this.server.use('/dist', express.static('public/dist'));
         this.server.use('/files', express.static('public/files'));
         this.server.use(ignoreFaviconMiddleware);
