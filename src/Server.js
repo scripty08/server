@@ -6,8 +6,7 @@ import prerender from 'prerender-node';
 import compression from 'compression';
 
 export class Server {
-    constructor(db) {
-        db();
+    constructor() {
         this.create();
     }
 
