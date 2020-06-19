@@ -1,7 +1,6 @@
 import express from 'express';
 import { ignoreFaviconMiddleware } from './middlewares';
 import { Router } from './Router';
-import { getConnection } from './mongo';
 import { Logger } from './Logger';
 import prerender from 'prerender-node';
 import compression from 'compression';
@@ -26,7 +25,6 @@ export class Server {
     }
 
     create() {
-        getConnection();
         this.server = express();
 
         prerender.set('prerenderServiceUrl', process.env.PRERENDER_URL);

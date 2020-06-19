@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 
 export class Router {
 
@@ -8,6 +7,6 @@ export class Router {
     }
 
     addController(controller) {
-        controller.init(this.server, express.Router(), mongoose);
+        controller.init(this.server, express.Router());
     }
 }

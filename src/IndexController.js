@@ -8,8 +8,7 @@ export class IndexController {
         this.config = config;
     }
 
-    async init(server, router, mongoose) {
-        this.mongoose = mongoose;
+    async init(server, router) {
         router.get('*', this.indexAction.bind(this));
 
         if ('development' === process.env.NODE_ENV) {
