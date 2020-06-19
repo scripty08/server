@@ -20,7 +20,7 @@
     "prerender-node": "^3.2.5",
     "compression": "^1.7.4",
     "handlebars": "^4.5.3",
-    "log4js": "^6.2.1"
+    "@scripty/logger": "^0.1.0"
   },
   "devDependencies": {},
   "type": "module"

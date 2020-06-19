@@ -1,7 +1,7 @@
 import express from 'express';
 import { ignoreFaviconMiddleware } from './middlewares';
 import { Router } from './Router';
-import { Logger } from './Logger';
+import { Logger } from '@scripty/logger';
 import prerender from 'prerender-node';
 import compression from 'compression';
 
