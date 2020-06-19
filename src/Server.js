@@ -30,7 +30,7 @@ export class Server {
         prerender.set('prerenderServiceUrl', process.env.PRERENDER_URL);
         prerender.set('host', process.env.HOST);
         prerender.set( 'protocol', 'https' );
-
+        this.server.use(express.json())
         this.server.use(compression());
         this.server.use('/dist', express.static('public/dist'));
         this.server.use('/files', express.static('public/files'));
