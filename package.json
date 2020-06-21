@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Danijel Garic",
   "license": "MIT",
-  "description": "",
+  "description": "wrapper for express server.",
   "homepage": "https://garic.biz",
   "keywords": [
     "react"
