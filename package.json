@@ -11,9 +11,6 @@
   "extension": "js",
   "main": "src/index.js",
   "repository": "scripty/server",
-  "publishConfig": {
-    "registry": "https://nexus.garic.biz/repository/npm-registry/"
-  },
   "dependencies": {
     "express": "^4.17.1",
     "dotenv": "^8.2.0",
