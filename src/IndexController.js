@@ -20,8 +20,7 @@ export class IndexController {
     }
 
     async indexAction(req, res) {
-        const dirname = path.join(path.dirname(decodeURI(new URL(import.meta.url).pathname)));
-        const view = fs.readFileSync(path.resolve(dirname, "./index.hbs"), 'utf8');
+        const view = fs.readFileSync(path.resolve("./node_modules/@scripty/server/src/index.hbs"), 'utf8');
         const template = handlebars.compile(view);
 
         let body = template({
@@ -43,3 +42,4 @@ export class IndexController {
         res.end(body);
     };
 }
+
