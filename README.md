@@ -1,4 +1,4 @@
-# @scripty/react-header
+# @scripty/server
 
 # Description
 
@@ -84,6 +84,7 @@ project
 You can access your files on server this way:
 
 https://localhost:3000/files/file1.txt
+
 https://localhost:3000/images/image1.png
 
 
