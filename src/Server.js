@@ -20,6 +20,10 @@ export class Server {
         this.router.addController(controller);
     }
 
+    setDatabase(db) {
+        this.server.db = db;
+    }
+
     use(requestHandler) {
         this.server.use(requestHandler);
     }
