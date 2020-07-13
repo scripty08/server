@@ -1,11 +1,17 @@
 {
   "name": "@scripty/server",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Danijel Garic",
   "license": "MIT",
   "description": "wrapper for express server.",
   "homepage": "https://garic.biz",
   "keywords": [
+    "express.js",
+    "node server",
+    "prerendering",
+    "hot-modules-reload",
+    "express wrapper",
+    "static files",
     "react"
   ],
   "extension": "js",
