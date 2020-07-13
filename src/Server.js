@@ -34,6 +34,7 @@ export class Server {
         this.server.use(compression());
         this.server.use('/dist', express.static('public/dist'));
         this.server.use('/files', express.static('public/files'));
+        this.server.use('/images', express.static('public/images'));
         this.server.use(ignoreFaviconMiddleware);
         this.server.use(prerender);
         this.router = new Router(this.server);
